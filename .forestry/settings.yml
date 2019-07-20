@@ -9,17 +9,16 @@ sections:
 - type: document
   path: document
   label: Document Section
-  match: "**/*"
 - type: directory
   path: ''
   label: " Directory Section"
   create: all
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: forestry
+public_path: https://cloudinary.com/console/media_library/folders/all/forestry
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":filename:"
+file_template: 'filename/:filename:'
 build:
   preview_command: vuepress build -d .vuepress/dist
   publish_command: vuepress build -d .vuepress/dist
